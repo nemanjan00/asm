@@ -1,0 +1,12 @@
+# Compiled ignore
+
+*.o
+*.out
+
+# Vim ignore
+
+*~
+
+*.swp
+*.swo
+
