@@ -4,7 +4,13 @@
 
 ```bash
 asm(){
-	gcc -c $1.S -o $1.o ; gcc $1.o -o $1.out ; ./$1.out
+	gcc -c $1.S -o $1.o
+	gcc $1.o -o $1.out
+	
+	./$1.out
+
+	rm $1.o
+	rm $1.out
 }
 ```
 
