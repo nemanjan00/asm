@@ -1,10 +1,10 @@
 .section .data
-	suma: .long 0
+	sum: .long 0
 	n: .long 0
 
 	pre_input: .asciz "N: "
 	input_format: .ascii "%d"
-	output_format: .asciz "Suma: %d \n"
+	output_format: .asciz "Sum: %d \n"
 
 .section .text
 	.extern printf
@@ -13,24 +13,30 @@
 	.global main
 
 main:
-	movl $0, %eax
-	movl $0, %ebx
-
-	movq $pre_input, %rdi
-	call printf
+	# Print N:
 
 	movq $0, %rax
+	movq $pre_input, %rdi
+
+	call printf
+
+	# Scan for n
+
 	movq $0, %rax
 	movq $input_format, %rdi
 	movq $n, %rsi
 
 	call scanf
 
-	movl n, %ecx
+	# Init registers
+
+	movl $0, %eax # Sum
+	movl $1, %ebx # Counter
+	movl n, %ecx # n
 
 loop:
 	cmpl %ecx, %ebx
-	je print
+	jg print
 
 	addl %ebx, %eax
 	addl $1, %ebx
@@ -38,10 +44,10 @@ loop:
 	jmp loop
 
 print: 
-	movl %eax, suma
+	movl %eax, sum
 
 	movq $output_format, %rdi
-	movq suma, %rsi
+	movq sum, %rsi
 	movq $0, %rax
 
 	call printf
