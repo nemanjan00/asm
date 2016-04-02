@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "width": 54,
+  "height": 26,
+  "duration": 0.006788,
+  "command": "asm-dbg",
+  "title": "",
+  "env": {
+    "TERM": "xterm",
+    "SHELL": "/usr/bin/zsh"
+  },
+  "stdout": [
+    [
+      0.006351,
+      "sh: asm-dbg: command not found\r\n"
+    ]
+  ]
+}
