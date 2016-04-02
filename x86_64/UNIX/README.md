@@ -18,5 +18,10 @@ asm(){
 
 ### SumOfFirstN
 
-Reads n from stdin, loops from 0 to n and calculates sum
+Reads n from stdin, loops from 1 to n and calculates sum
+
+#### Externals
+
+* printf
+* scanf
 
