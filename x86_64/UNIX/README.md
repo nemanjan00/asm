@@ -29,21 +29,21 @@ asm-dbg(){
 
 ## Codes
 
-### SumOfFirstN
+### sumOfFirstN
 
 Reads n from stdin, loops from 1 to n and calculates sum
-
-#### Externals
-
-* printf
-* scanf
 
 ### simpleSerialKey
 
 Simple example for learning cracking
 
-#### Externals
+### randNumberGuess
 
-* printf
-* scanf
+This one is written in C and converted to ASM using gcc. 
+
+Simple example of guess number game... 
+
+```bash
+gcc -S -o randNumberGuess.S randNumberGuess.c
+```
 
