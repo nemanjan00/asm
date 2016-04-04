@@ -46,4 +46,7 @@ Simple example of guess number game...
 ```bash
 gcc -S -o randNumberGuess.S randNumberGuess.c
 ```
+### simpleAddFunction
+
+This one is example of function in ASM
 
