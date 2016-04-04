@@ -3,7 +3,7 @@
 	n: .long 0
 
 	pre_input: .asciz "N: "
-	input_format: .ascii "%d"
+	input_format: .asciz "%d"
 	output_format: .asciz "Sum: %d \n"
 
 .section .text

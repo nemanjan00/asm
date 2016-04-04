@@ -1,6 +1,6 @@
 .section .data
 	pre_input: .asciz "Serial number: "
-	input_format: .ascii "%d"
+	input_format: .asciz "%d"
 
 	good_output: .asciz "Flag: GOOD_JOB \n"
 	bad_output: .asciz "Bad! \n"
